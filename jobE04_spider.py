@@ -46,7 +46,7 @@ class JobE04Spider():
 
         # 寫入空列表，清空舊紀錄
         with open(self.error_log_file, 'w', encoding='utf-8-sig') as f:
-            json.dump([], f)
+            json.dump("", f)
 
         self.refresh_session()
 
